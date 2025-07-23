@@ -1,0 +1,9 @@
+/* styles/rafting.css */
+
+body {
+  font-family: 'Poppins', sans-serif; /* Text font */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Alice', serif; /* Heading font */
+}
