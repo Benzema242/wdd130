@@ -1,9 +1,117 @@
-/* styles/rafting.css */
+:root {
+  --primary-color: #00296B; 
+  --secondary-color: #ffffff; 
+  --accent-color: #00509D;
+  --text-color: #000000;
+}
 
-body {
-  font-family: 'Poppins', sans-serif; /* Text font */
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+}
+header h1 {
+  font-family: 'Alice', serif;
+  margin: 0;
+}
+
+nav a {
+  color: var(--secondary-color);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--accent-color);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.hero-heading {
+  position: absolute;
+  top: 1.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  z-index: 2;
+  font-size: 2.5rem;
+  width: 80%;
+  text-align: center;
+}
+
+.hero article {
+  position: absolute;
+  top: 38.5%;
+  left: 81.5%;
+  transform: translate(-50%, -10%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  color: white;
+  z-index: 2;
+  width: 60%;
+  max-width: 700px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.article-img {
+  float: right;
+  width: 220px;
+  height: auto;
+  margin: 0 0 1rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Alice', serif; /* Heading font */
+  font-family: 'Alice', serif;
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+  font-size: 2.2rem;
+}
+section p {
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+footer a:hover {
+  color: var(--accent-color);
 }
