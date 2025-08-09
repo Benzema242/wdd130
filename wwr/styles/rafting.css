@@ -1,14 +1,29 @@
 :root {
   --primary-color: #00296B; 
   --secondary-color: #ffffff; 
-  --accent-color: #00509D;
+  --accent1-color: #00509D;
+  --accent2-color: #fff700;
+  --heading-font: 'Alice', serif;
+  --body-font: 'Poppins', sans-serif;
   --text-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--accent2-color);
   padding: 1rem;
+  margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1090px;
 }
 header h1 {
   font-family: 'Alice', serif;
@@ -58,36 +73,39 @@ nav {
 }
 
 .hero article {
-  position: absolute;
-  top: 38.4%;
-  left: 81.5%;
-  transform: translate(-50%, -10%);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  color: white;
-  z-index: 2;
-  width: 60%;
-  max-width: 700px;
-  box-sizing: border-box;
-  text-align: left;
+	margin: 1em auto;
+	border: 1px solid rgb(0 0 0 / 10%);
+	padding: 1em;
+	background-color: #ace;
+	width: min(600px, 100%);
+	font-size: 1.2rem;
 }
 
 .article-img {
   float: right;
-  width: 220px;
-  height: auto;
-  margin: 0 0 1rem 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  width:125px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Alice', serif;
-  text-align: center;
-  margin: 1.5rem 0 1rem;
-  font-size: 2.2rem;
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+}  
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
 section p {
   text-align: center;
   font-size: 1.2rem;
@@ -95,8 +113,13 @@ section p {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
 footer a {
