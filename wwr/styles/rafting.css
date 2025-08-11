@@ -294,15 +294,17 @@ header, main, footer {
 }
 .social-media a {
   text-decoration: none;
+  display: flex;
+  gap: 0.1rem;
 }
 
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  text-align: center;
   padding: 1rem;
-  position: relative;
-  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer a:hover {
