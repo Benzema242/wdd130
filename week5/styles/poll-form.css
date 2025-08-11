@@ -24,16 +24,20 @@ h1 {
     font-size: 2rem;
     color: #04007b;
     text-align: center;
+    font-weight: bold;
 }
 
 form {
-    width: 650px;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0/ 0.1);
-    border-radius: 0.5rem;
+    width: 700px;
+    height: 750px;
+    margin: 2rem auto 0 auto;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 16px;
     background: #fbf6d9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
     display: grid;
+    grid-gap: 1.2rem;
 }
 
 .form-item {
@@ -44,7 +48,7 @@ form {
 
 .column1 {
     grid-template-columns: 1fr 2fr;
-    grid-gap: 1rem;;
+    grid-gap: 1rem;
 }
 
 .column2 {
@@ -55,17 +59,20 @@ form {
 
 fieldset {
     display: grid;
-    grid-gap: .4rem;
-    margin:1rem;
-    border: 1px solid rgb(0 0 0/ 0.2);
-    padding: 1rem;
+    grid-gap: .8rem;
+    margin:0rem;
+    border: 1.5px solid rgb(0 0 0/ 0.2);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: none;
 }
 
 legend {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0;
     color: #04007b;
     font-weight: 700;
     font-size: 1.3rem;
+
 }
 
 label, input, button, select, textarea {
@@ -74,28 +81,44 @@ label, input, button, select, textarea {
 }
 
 label {
-    text-align: left;
+    text-align: center;
     padding-right: 1rem;
 }
 input, select, textarea {
-    padding: 0.5rem;
-    font-size:1.1rem;
+    padding: .45rem;
+    font-size:1.05rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+
 }
 
 input[type="checkbox"] {
     width: 1.5rem;
     height: 1.5rem;
-    vertical-align: bottom;
+    vertical-align: middle;
+    accent-color: #04007b;
+    position: center;
 }
 
+.center-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 button {
-    margin: 1rem;
+    margin: 1rem auto 0 auto;
+    display: block;
     background: #04007b;
     color: #fff;
     border: none;
-    border-radius: 0.5rem;
-    padding: .75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    padding: .5rem;
     font-size: 1.2rem;
+    width: 150px;
+    
 }
 
 button:hover {
