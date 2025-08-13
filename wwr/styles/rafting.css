@@ -298,10 +298,10 @@ nav a:hover {
 }
 
 .contact-heading {
-  top: 22%;
+  top: 30%;
   padding: 0.3em 0;
-  width: 40%;
-  left: 29.9%;
+  width: 50%;
+  left: 25%;
   position: absolute;
   background: rgba(0, 41, 107, 0.788);
   background-size: 10%;
@@ -505,6 +505,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .social-media a {
