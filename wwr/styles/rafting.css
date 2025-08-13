@@ -277,17 +277,17 @@ nav a:hover {
 }
 
 .contact-heading {
-  top: 30%;
+  top: 22%;
   padding: 0.3em 0;
-  width: 55%;
-  left: 22.5%;
+  width: 40%;
+  left: 29.9%;
   position: absolute;
-  background: rgba(0, 41, 107, 0.82); 
+  background: rgba(0, 41, 107, 0.788);
+  background-size: 10%;
+  background-position: center;
   color: var(--accent2-color);
   font-family: var(--heading-font);
-  text-align: center;
-  font-size: 2.3rem;
-  text-shadow: 1px 2px 5px #0006;
+  font-size: 2.2rem;
 }
 
 /* Team Members Section */
@@ -410,7 +410,7 @@ nav a:hover {
 
 /* Radio Buttons */
 .form-radio {
-  display: flex; 
+  display: flex;
   align-items: center;
   margin: 0.5rem 0;
 }
@@ -424,7 +424,24 @@ nav a:hover {
   margin: 0;
 }
 
-/* Submit Button */
+/* Checkbox */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.form-checkbox label {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}/* Submit Button */
 .button {
   display: flex;
   justify-content: center;
@@ -520,12 +537,6 @@ footer a:hover {
     gap: 0.7rem;
   }
 
-  .contact-heading {
-    font-size: 1.5rem;
-    top: 10%;
-    left: 5%;
-    width: 90%;
-  }
   
   .article-img {
     width: 100%;
