@@ -1,11 +1,19 @@
+:root {
+  --main-bg-color: lightblue;
+  --nav-bg-color: darkblue;
+  --nav-text-color: white;
+  --aside-bg-color: #eee;
+  --aside-text-color: #333;
+}
+
 
 nav {
-  background-color: darkblue;
+  background-color: var(--nav-bg-color);
   padding: 10px;
 }
 
 nav a {
-  color: white;
+  color: var(--nav-text-color);
   display: block;
   padding: 20px;
 }
