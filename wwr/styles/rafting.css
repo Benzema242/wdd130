@@ -1,10 +1,6 @@
 :root {
-  --main-bg-color: lightblue;
-  --nav-bg-color: darkblue;
-  --nav-text-color: white;
-  --aside-bg-color: #eee;
-  --aside-text-color: #000000;
-  --heading-font: 'Alice', serif;
-  --body-font: 'Poppins', sans-serif;
-
+  --primary-color: #00296B; 
+  --secondary-color: #ffffff; 
+  --accent1-color: #00509D;
+  --accent2-color: #fff700;
 }
