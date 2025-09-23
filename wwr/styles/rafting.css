@@ -1,6 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 :root {
   --primary-color: #00296B; 
   --secondary-color: #ffffff; 
   --accent1-color: #00509D;
   --accent2-color: #fff700;
+  --heading-font: 'Alice', serif;
+  --body-font: 'Poppins', sans-serif;
+  --text-color: #000000;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  height: 125px;
+  top: 15px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid black;
+  padding: 1px;
+  box-shadow: 0 0 40px rgb(0, 0, 0);
+  margin: 0 0 1rem 1rem;
+
+}
+
+.hero article {
+  position: absolute;
+  display: flex;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 800px;
+  padding: 0rem;
+  text-align: left;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+}
+
+.hero article p {
+  margin: 0;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 840px; 
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+ h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+}
+
+section > h2 {
+  margin: 0 calc(50% - 50vw);
+  padding: 16px;
+}
+nav, p, section, article {
+  margin: 0;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
 }
