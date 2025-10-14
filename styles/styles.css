@@ -69,6 +69,7 @@ p {
 main {
   max-width: 100%;
   grid-column: 2 / 3;
+  padding-top: 50px;
   margin: 0;
 }
 
@@ -84,8 +85,8 @@ aside img {
 }
 aside h2 {
   position: absolute;
-  top: 40px;
-  left: 50px;
+  top: 60px;
+  left: 140px;
 }
 
 p {
