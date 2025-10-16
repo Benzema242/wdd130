@@ -640,7 +640,7 @@ footer a {
 footer a:hover {
   color: var(--accent2-color);
 }
-/* Responsive Design 
+/* Responsive Design */
 @media (max-width: 900px) {
   .history-content {
     grid-template-columns: 1fr;
