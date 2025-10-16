@@ -30,12 +30,71 @@
         </nav>
     </header>
     <main>
-        <section class="contact-hero">
-            <img src="images/contact-us-hero.jpg" alt="Rafting Adventure">
-            <h1 class="contact-heading">Contact Us - White Water Rafting Adventures</h1>
-            <h2>Meet Our Team</h2>
-            <p>Our team is made up of passionate individuals who love the outdoors and adventure. Each member brings
-                unique skills and experiences to ensure you have the best rafting experience possible.</p>
+        <div class="p">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Rafting Lane</p>
+            <p>Adventure City, State, 12345</p>
+            <p>Phone: +1 (234) 567-890</p>
+            <p>info@whitewater.com</p>
+        </div>
+        <div class="grid">
+            <section class="contact-form">
+                <h2>Send Us a Message!</h2>
+                <div class="form">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                            <div class="form-item1">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-item2">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Inquiry Type:</legend>
+
+                            <div class="form-radio">
+                                <input type="radio" id="general" name="inquiry" value="general" checked>
+                                <label for="general">General Inquiry</label>
+                            </div>
+
+                            <div class="form-radio">
+                                <input type="radio" id="reservation" name="inquiry" value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+
+                            <div class="form-radio">
+                                <input type="radio" id="website" name="inquiry" value="website">
+                                <label for="website">Website Suggestions</label>
+                            </div>
+
+                            <div class="form-item3">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                            </div>
+
+                            <div class="button">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8340.806140141412!2d-88.43131755902596!3d17.40848052982488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbs!4v1754958268352!5m2!1sen!2sbs"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <h2>We Are Here to Serve You</h2>
             <div class="team-members">
                 <figure>
                     <img src="images/founder.jpg" alt="Founder Rubens Scutt">
@@ -54,73 +113,9 @@
                     <figcaption>Gabriella Ruiz - Lead Customer Service Representative</figcaption>
                 </figure>
             </div>
-        </section>
-        <section class="contact-form">
-            <h2>Send Us a Message!</h2>
-            <div class="form">
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Contact Form</legend>
-                        <div class="form-item1">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-item2">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Inquiry Type:</legend>
-
-                        <div class="form-radio">
-                            <input type="radio" id="general" name="inquiry" value="general" checked>
-                            <label for="general">General Inquiry</label>
-                        </div>
-
-                        <div class="form-radio">
-                            <input type="radio" id="reservation" name="inquiry" value="reservation">
-                            <label for="reservation">Reservation Question</label>
-                        </div>
-
-                        <div class="form-radio">
-                            <input type="radio" id="website" name="inquiry" value="website">
-                            <label for="website">Website Suggestions</label>
-                        </div>
-
-                        <div class="form-item3">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-
-                        <div class="form-checkbox">
-                            <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-                            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                        </div>
-
-                        <div class="button">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8340.806140141412!2d-88.43131755902596!3d17.40848052982488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbs!4v1754958268352!5m2!1sen!2sbs"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+            </section>
     </main>
     <footer>
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Phone: +1 (234) 567-890</p>
-            <p>Email: rubens@wwr.com</p>
-            <p>Address: 123 Rafting Lane, Adventure City, State, 12345</p>
-            <p>Contact Page Wireframe <a
-                    href="https://app.moqups.com/JViKQzdZeT1JS0BxjrGYPfe9xxaxHgiM/view/page/a9a5f8d52">View
-                    Wireframe</a></p>
         </div>
         <p>&copy; 2025 Rubens Scutt White Water Rafting</p>
         <nav class="social-media">
